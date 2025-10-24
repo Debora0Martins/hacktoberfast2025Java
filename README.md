@@ -1,52 +1,27 @@
-<h1 align="center"> Hacktoberfest 2021 </h1>
+# hacktoberfast2025Java — Calculadora Interativa
 
-***
-<h3 align="center">
-    <a href="https://hacktoberfest.digitalocean.com/">
-        Link To HacktoberFest 2021
-    </a>
-</h3>
+Este repositório contém uma pequena calculadora interativa em Java.
 
-## Event details :
+Estrutura recomendada (já aplicada):
+- src/main/java/InteractiveCalculator.java
 
-- Hacktoberfest® is open to everyone in our global community. Whether you’re a developer, student learning to code, event host, or company of any size, you can help drive growth of open source and make positive contributions to an ever-growing community. All backgrounds and skill levels are encouraged to complete the challenge.
+Como compilar e executar
 
-- Hacktoberfest is a celebration open to everyone in our global community.
-- Pull requests can be made in any GitHub-hosted repositories/projects.
-- You can sign up anytime between October 1 and October 31.
+Opção A — sem Gradle (javac + java)
+1. Compile:
+   javac -d out src/main/java/InteractiveCalculator.java
+2. Execute:
+   java -cp out InteractiveCalculator
 
-## HacktoberFest Rules :
+Opção B — com Gradle (se tiver o Gradle instalado)
+1. No diretório do projeto:
+   gradle run
 
-To earn your Hacktoberfest tee or tree reward, you must register and make four valid pull requests (PRs) between October 1-31 (in any time zone). Pull requests can be made in any participating GitHub or GitLab hosted repository/project. Look for the 'hacktoberfest' topic to know if a repository/project is participating in Hacktoberfest. Pull requests must be approved by a maintainer of the repository/project to count. If a maintainer reports your pull request as spam or behavior not in line with the project’s code of conduct, you will be ineligible to participate. This year, the first 55,000 participants who successfully complete the challenge will be eligible to receive a prize.
-***
-<h3 align="center"> Whether it’s your first or fiftieth pull request, there’s always more to learn! We’ve put together a few resources that can help you create quality pull requests, keep your repositories pristine, and build on your open source knowledge. </h3>
+Observações
+- O projeto usa package padrão (sem package) para manter simples.
+- Se quiser executar sem ter o Gradle instalado, eu posso adicionar o Gradle Wrapper (arquivos `gradlew`), assim qualquer usuário pode rodar `./gradlew run` (Unix) ou `gradlew.bat run` (Windows).
 
-***
-
-<h3 align="center">
-    <a href="https://discord.com/invite/hacktoberfest/">
-       Join Discord Conversation
-    </a>
-</h3>
-
-***
-## Rules To Contribute To This Repo
-
--   Use any language.
--   C, C++, JAVA, Data Structure and Algorithms, HTML, CSS, Android Projects.
--   Anything valuable.
-![Alt Text](https://res.cloudinary.com/practicaldev/image/fetch/s--Gg3AHVhQ--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/of9b6i02ifmdq5zlbmkz.jpg)
-
-## Steps For Contribution
-
-    1. Fork this repo
-    2. Star this repo
-    3. Add a file
-    4. commit the code
-    5. Make pull request
-***
-<h2 align="center">
-    <p>
-        Thank You
-    </p>
-</h2>
+Melhorias possíveis
+- Adicionar testes unitários com JUnit.
+- Empacotar como JAR executável.
+- Adicionar Gradle Wrapper para rodar sem instalar Gradle.

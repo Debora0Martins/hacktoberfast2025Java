@@ -1,0 +1,15 @@
+plugins {
+    id 'application'
+}
+
+group = 'com.github.debora0martins'
+version = '1.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+application {
+    // For Gradle 7+: replace with mainClass.set('InteractiveCalculator') if needed
+    mainClass = 'InteractiveCalculator'
+}
